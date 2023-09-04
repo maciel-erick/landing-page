@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -7,15 +9,18 @@
 body {
     color: #000;
     font-size: 16px;
+    height: 100%;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    line-height: 1.2;
 }
 
 header {
     background-color: navy;
     color: #fff;
-    min-height: 50px;
+    height: 40px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .container {
@@ -26,14 +31,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1400px;
-    flex: 1;
-
-    border: 1px solid red;
+    width: 1000px;
 }
 
 .header-logo {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -53,3 +55,59 @@ a {
     color: #fff;
     text-decoration: none;
 }
+
+nav {
+    background-color: navy;
+    color: #fff;
+    height: 300px;
+    padding: 48px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container {
+    height: 100%;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container-left {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.nav-container-right {
+    background-color: gray;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.nav-container-left h1 {
+    font-size: 56px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.nav-container-left p {
+    font-size: 18px;
+}
+
+.button {
+    background-color: #0000FF;
+    border-radius: 8px;
+    padding: 6px 32px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
